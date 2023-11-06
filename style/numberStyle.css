@@ -1,0 +1,166 @@
+body{
+    margin: 0px;
+    padding: 0px;
+}
+#numbersBackground{
+    background-image: url("../assets/image/numbersBackground.jpg");
+    background-size: 100% 100%;
+}
+.icons{
+    position: absolute;
+    left: 0.7%;
+    cursor: pointer;
+}
+.icons:hover{
+    opacity:0.7;
+}
+#soundIcon{
+    width: 4%;
+    height: 8%;
+    top: 2%;
+}
+#homeIcon{
+    font-size: 280%;
+    top: 12%;
+}
+#backIcon{
+    width: 4%;
+    height: 8%;
+    top: 21%;
+    display: none;
+}
+/* #numsImgs img:hover{
+    width: 7%;
+    height: 22%;
+    z-index: 1;
+} */
+.numbers{
+    width: 6%;
+    height: 18%;
+    position: absolute;
+    top: 35%;
+    animation-name: numbers;
+}
+@keyframes numbers{
+    from{top: -10%;}
+    to{top:35%}
+}
+#num1{
+    left: 15%;
+    animation-duration: 1s;
+}
+#num2{
+    left: 23.125%;
+    animation-duration: 2s;
+}
+#num3{
+    left: 31.25%;
+    animation-duration: 2.5s;
+}
+#num4{
+    left: 39.375%;
+    animation-duration: 3.5s;
+}
+#num5{
+    left: 47.5%;
+    animation-duration: 1.25s;
+}
+#num6{
+    left: 55.625%;
+    animation-duration: 3.1s;
+}
+#num7{
+    left: 63.75%;
+    animation-duration: 4s;
+}
+#num8{
+    left: 71.875%;
+    animation-duration: 2.8s;
+}
+#num9{
+    left: 80%;
+    animation-duration: 1.8s;
+}
+#selectedImg{
+    width: 10%;
+    height: 42%;
+    position: absolute;
+    top: 24%;
+    left: 18%;
+    display: none;
+    animation-name: selectedNum;
+    animation-duration: 2s;
+}
+@keyframes selectedNum{
+    from{top: -10%;}
+    to{top:24%}
+}
+#animalsImgs{
+    width: 50%;
+    display: none;
+    height: 48%;
+    position: absolute;
+    top: 21%;
+    left: 35%;
+    margin: 0%;
+    padding: 0%;
+}
+.glow {
+    font-size: 100px;
+    color: #fff;
+    position: absolute;
+    top: 75%;
+    left: 42%;
+    cursor: pointer;
+    -webkit-animation: glow 1s ease-in-out infinite alternate;
+    -moz-animation: glow 1s ease-in-out infinite alternate;
+    animation: glow 1s ease-in-out infinite alternate;
+  }
+@-webkit-keyframes glow {
+    from {
+        text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #ffffff, 0 0 40px #ffffff,
+        0 0 50px #ffffff, 0 0 60px #ffffff, 0 0 70px #ffffff;
+    }
+    to {
+        text-shadow: 0 0 20px #fff, 0 0 30px #0c22e0, 0 0 40px #0c22e0, 0 0 50px #0c22e0,
+        0 0 60px #0c22e0, 0 0 70px #0c22e0, 0 0 80px #0c22e0;
+    }
+}
+#choicesImgs{
+    margin: 0%;
+    padding: 0%;
+    width: 20%;
+    height: 46%;
+    position: absolute;
+    top: 22%;
+    display: none;
+    left: 14%;
+}
+.choice{
+    margin: 0%;
+    padding: 0%;
+    width: 50%;
+    height: 50%;
+    float: left;
+    display: none;
+    cursor: pointer;
+}
+.ROW{
+    width: 10%;
+    height: 10%;
+    position: absolute;
+    top: 6%;
+    left: 45%;
+    display: none;
+}
+#next{
+    background-color: #d3132c;
+    font-size: larger;
+    width: 20%;
+    height: 10%;
+    position: absolute;
+    top: 85%;
+    left: 40%;
+    display: none;
+    cursor: pointer;
+}

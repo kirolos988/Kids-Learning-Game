@@ -1,0 +1,42 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Numbers</title>
+    <script src="./scripts/jquery.min.js"></script>
+    <link rel="stylesheet" href="style/numberStyle.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  </head>
+  <body id="numbersBackground">
+    <audio id="numbersSoundTrack" value="off" loop>
+      <source src="./assets/sound/numbersSoundTrack.mp3" type="audio/mpeg"/>
+      <source src="./assets/sound/numbersSoundTrack.WAV" type="audio/WAV"/>
+      Your browser doesn't support the audio extension.
+    </audio>
+    <img src="./assets/image/audio-2.png" id="soundIcon" class="icons" onclick="playMusic()">
+    <i class="fa-solid fa-house icons" id="homeIcon" onclick="goToHome()"></i>
+    <img src="./assets/image/backicon.png" id="backIcon" class="icons" onclick="goToNumber()">
+    <div id="numsImgs">
+      <img class="numbers" src="./assets/image/1.png" id="num1" onclick="lesson(this)"/>
+      <img class="numbers" src="./assets/image/2.png" id="num2" onclick="lesson(this)"/>
+      <img class="numbers" src="./assets/image/3.png" id="num3" onclick="lesson(this)"/>
+      <img class="numbers" src="./assets/image/4.png" id="num4" onclick="lesson(this)"/>
+      <img class="numbers" src="./assets/image/5.png" id="num5" onclick="lesson(this)"/>
+      <img class="numbers" src="./assets/image/6.png" id="num6" onclick="lesson(this)"/>
+      <img class="numbers" src="./assets/image/7.png" id="num7" onclick="lesson(this)"/>
+      <img class="numbers" src="./assets/image/8.png" id="num8" onclick="lesson(this)"/>
+      <img class="numbers" src="./assets/image/9.png" id="num9" onclick="lesson(this)"/>
+    </div>
+    <img id="selectedImg" src=""></img>
+    <audio id="selectedSound">
+      <source src=""  type="audio/mpeg"/>
+      Your browser doesn't support the audio extension.
+    </audio>
+    <div id="animalsImgs"></div>
+    <span class="glow" id="glowQuiz" onclick="quiz()">Quiz</span>
+    <div id="choicesImgs"></div>
+    <img class="ROW" id="right" src="./assets/image/right.png">
+    <img class="ROW" id="wrong" src="./assets/image/wrong.png">
+    <button type="button" id="next" onclick="quiz()">Next</button>
+    <script src="../Game Project/scripts/number.js"></script>
+  </img>
+</html>
